@@ -39,13 +39,18 @@
           <a href="https://treact.owaiskhan.me/#" class="nav__button"
             >Sign Up</a
           >
+          
           <button
             class="btn__menu"
             type="button"
             aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            onclick="openMenu()"
           >
-            ☰
+            <i class="fas fa-bars"></i>
           </button>
+
         </div>
       </nav>
 
@@ -59,33 +64,29 @@
                 </button>
             </div>
         </nav> -->
-      <div class="modal">
-        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="light___StyledCloseIcon-lj69nl-14 fASujC"
+      
+        <div class="modal" id="mobile-menu">
+          <button
+            class="btn__menu btn__menu--close"
+            type="button"
+            aria-label="Close navigation menu"
+            onclick="closeMenu()"
           >
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
-        </button>
-        <div class="modal__links">
-          <a class="modal__link">About</a>
-          <a class="modal__link">Blog</a>
-          <a class="modal__link">Pricing</a>
-          <a class="modal__link">Contact Us</a>
-          <a class="modal__link">Login</a>
-          <a class="modal__link modal__link--primary">Sign Up</a>
+            <i class="fas fa-times"></i>
+          </button>
+
+          <div class="modal__links">
+            <a href="#landing" class="modal__link">About</a>
+            <a href="#features" class="modal__link">Blog</a>
+            <a href="#pricing" class="modal__link">Pricing</a>
+            <a href="#start" class="modal__link">Contact Us</a>
+            <a href="#landing" class="modal__link">Login</a>
+            <a href="#start" class="modal__link modal__link--primary">
+              Sign Up
+            </a>
+          </div>
         </div>
-      </div>
+
       <header>
         <div class="container">
           <div class="row">
@@ -392,7 +393,8 @@
           <div class="value">
             <div class="value__heading">
               <span class="value__icon value__icon--red">
-               </span>
+              <i class="fas fa-suitcase"></i>
+              </span>
               <h3>Professionalism</h3>
             </div>
             <p>
@@ -597,21 +599,23 @@
                 </div>
               </div>
 
+              
               <div class="testimonials__controls">
                 <label for="review2"
-                       class="testimonials__arrow"
-                       title="Previous testimonial">
-                  &larr;
+                      class="testimonials__arrow"
+                      title="Previous testimonial">
+                  <i class="fas fa-arrow-left"></i>
                 </label>
 
                 <span class="testimonials__separator"></span>
 
                 <label for="review2"
-                       class="testimonials__arrow"
-                       title="Next testimonial">
-                  &rarr;
+                      class="testimonials__arrow"
+                      title="Next testimonial">
+                  <i class="fas fa-arrow-right"></i>
                 </label>
               </div>
+
 
             </div>
           </div>
@@ -645,21 +649,23 @@
                 </div>
               </div>
 
+              
               <div class="testimonials__controls">
                 <label for="review1"
-                       class="testimonials__arrow"
-                       title="Previous testimonial">
-                  &larr;
+                      class="testimonials__arrow"
+                      title="Previous testimonial">
+                  <i class="fas fa-arrow-left"></i>
                 </label>
 
                 <span class="testimonials__separator"></span>
 
                 <label for="review1"
-                       class="testimonials__arrow"
-                       title="Next testimonial">
-                  &rarr;
+                      class="testimonials__arrow"
+                      title="Next testimonial">
+                  <i class="fas fa-arrow-right"></i>
                 </label>
               </div>
+
 
             </div>
           </div>          
